@@ -1,0 +1,8 @@
+{
+  "body": "{\"timerId\": \"randomString\",\"title\":\"First Timer\",\"project\":\"serverless\",\"elapsed\": 0, \"runningSince\": null}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

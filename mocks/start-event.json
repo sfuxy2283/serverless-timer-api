@@ -1,0 +1,11 @@
+{
+  "body": "{\"start\": 2222222}",
+  "pathParameters": {
+    "id": "randomString"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

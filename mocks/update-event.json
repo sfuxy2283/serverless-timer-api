@@ -1,0 +1,11 @@
+{
+  "body": "{\"title\":\"new Timer\",\"project\":\"new project\"}",
+  "pathParameters": {
+    "id": "randomString"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}

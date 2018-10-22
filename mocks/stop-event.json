@@ -1,0 +1,11 @@
+{
+  "body": "{\"elapsed\": 1111111}",
+  "pathParameters": {
+    "id": "randomeString"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-SUB-1234"
+    }
+  }
+}
