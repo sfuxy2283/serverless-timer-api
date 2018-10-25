@@ -1,5 +1,5 @@
 # Serverless Timer - api
-Simple timer app that works without server, using AWS Ramda to handle user's requests
+Simple timer app that works without server, using AWS to handle user's requests
 
 ## Example site
 [Serverless-timer](http://serverless-timer-client.s3-website.ap-northeast-2.amazonaws.com/)
