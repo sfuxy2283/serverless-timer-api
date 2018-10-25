@@ -55,6 +55,17 @@ After deployment you can see the API end point on your terminal, use it to commu
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspire from [Serverless Stack](http://serverless-stack.com) guide.
-* etc
+This application uses 4 AWS services to handle user's requests.
+1. Cognito - authentication, authorization
+1. DynamoDB - nosql database to save users' data
+1. API Gateway - api endpoint of app
+1. Ramda - function to handle request from the user
+* Get - get the all timers made by a user
+* Create - create new timer
+* Update - update title or project of timer
+* Start - start timer
+* Stop - stop timer
+
+
+
+
