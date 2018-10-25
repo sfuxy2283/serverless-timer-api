@@ -1,21 +1,60 @@
-# Serverless Node.js Starter
+# Serverless Timer - api
+Simple timer app that works without server, using AWS Ramda to handle user's requests
 
-A Serverless starter that adds ES7 syntax, serverless-offline, environment variables, and unit test support. Part of the [Serverless Stack](http://serverless-stack.com) guide.
+## Example site
+[Serverless-timer](http://serverless-timer-client.s3-website.ap-northeast-2.amazonaws.com/)
+You can use this web app after signup or login by guest. 
 
-[Serverless Node.js Starter](https://github.com/AnomalyInnovations/serverless-nodejs-starter) uses the [serverless-webpack](https://github.com/serverless-heaven/serverless-webpack) plugin, [Babel](https://babeljs.io), [serverless-offline](https://github.com/dherault/serverless-offline), and [Jest](https://facebook.github.io/jest/). It supports:
+## Getting Started
+This api is bulit on severless framework to bulid infrastructure of AWS as code
 
-- **ES7 syntax in your handler functions**
-  - Use `import` and `export`
-- **Package your functions using Webpack**
-- **Run API Gateway locally**
-  - Use `serverless offline start`
-- **Support for unit tests**
-  - Run `npm test` to run your tests
-- **Sourcemaps for proper error messages**
-  - Error message show the correct line numbers
-  - Works in production with CloudWatch
-- **Automatic support for multiple handler files**
-  - No need to add a new entry to your `webpack.config.js`
-- **Add environment variables for your stages**
+### Prerequisites
+* AWS account and IAM user with admin access
+[official guide to create IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 
----
+
+### Installing
+1. Install the dependencies.
+```
+npm install
+```
+1. Set up credential for AWS(your IAM Key & Secret) to use AWS with serverless.
+```
+serverless config credentials --provider aws --key YOUR-IAM-KEY --secret YOUR-IAM-SECRET
+```
+1. Change your AWS region in serverless.yml.
+```
+# inside serverless.yml
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: YOUR-AWS-REGION
+  # To load environment variables externally
+  # rename env.example to env.yml and uncomment
+  # the following line. Also, make sure to not
+  # commit your env.yml.
+  #
+  environment:
+    tableName: ${self:custom.tableName}
+
+```
+
+## Deployment
+```
+serverless deploy -v
+```
+After deployment you can see the API end point on your terminal, use it to communicate with client side. 
+
+## Built With
+* [Serverless Node.js Starter](https://github.com/AnomalyInnovations/serverless-nodejs-starter)
+* [AWS sdk](https://github.com/aws/aws-sdk-js)
+* [npm](https://npm.community/)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+* Hat tip to anyone whose code was used
+* Inspire from [Serverless Stack](http://serverless-stack.com) guide.
+* etc
