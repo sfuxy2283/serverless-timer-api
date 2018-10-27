@@ -51,9 +51,6 @@ After deployment you can see the API end point on your terminal, use it to commu
 * [AWS sdk](https://github.com/aws/aws-sdk-js)
 * [npm](https://npm.community/)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 This application uses 4 AWS services to handle user's requests.
 1. Cognito - authentication, authorization
