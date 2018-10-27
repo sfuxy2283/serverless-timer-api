@@ -53,16 +53,12 @@ After deployment you can see the API end point on your terminal, use it to commu
 
 ## Acknowledgments
 This application uses 4 AWS services to handle user's requests.
-1. Cognito - authentication, authorization
-1. DynamoDB - nosql database to save users' data
-1. API Gateway - api endpoint of app
-1. Ramda - function to handle request from the user
+1. [Cognito](https://aws.amazon.com/cognito/?nc2=h_m1) - authentication, authorization
+1. [DynamoDB](https://aws.amazon.com/dynamodb/?nc1=h_ls) - nosql database to save users' data
+1. [API Gateway](https://aws.amazon.com/api-gateway/?nc2=h_m1) - api endpoint of app
+1. [Lambda](https://aws.amazon.com/lambda/?nc2=h_m1) - function to handle request from the user
 * Get - get the all timers made by a user
 * Create - create new timer
 * Update - update title or project of timer
 * Start - start timer
 * Stop - stop timer
-
-
-
-
