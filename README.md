@@ -6,7 +6,7 @@ Simple timer app that works without server, using AWS to handle user's requests
 You can use this web app after signup or login by guest. 
 
 ## Getting Started
-This api is bulit on severless framework to bulid infrastructure of AWS as code
+This api is bulit on severless framework to bulid infrastructure of AWS as code.
 
 ### Prerequisites
 * AWS account and IAM user with admin access
